@@ -1,0 +1,66 @@
+@media screen and (max-width: 1200px){
+.fav {
+    display: none !important;
+}
+input {
+    font-size: 11px !important;
+}
+
+.search_bar{
+      width: 30%;
+}
+}
+
+
+@media screen and (max-width: 900px) {
+    .outer-carousel {
+        height: 9%;
+    }
+
+    .carousel img {
+        height: 23vw;
+        width: 34.5vw;
+    }
+    
+    .carousel img:nth-child(1) {
+        left: 56vw;
+    }
+    .carousel img:nth-child(3) {
+        right: 56vw;
+    }
+    .carousel img:hover {
+        height: 27vw;
+        width: 40.5vw;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 550px){
+.logo_img img {
+    height: 30px;
+    width: 30px;
+}
+
+.logo  h1{
+    font-size: 3vw; 
+}
+
+.logo h4{
+    font-size: 2vw;
+}
+
+.bell img{
+    width:25px;
+    height: 25px;
+}
+
+.profile_pic img{
+    width:30px;
+    height: 30px;
+   
+}
+
+}
