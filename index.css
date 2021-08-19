@@ -145,11 +145,15 @@ text-align: center;
 .right_aside{
     width: 28%;
     height: 86vh;
+    overflow: scroll;
+    overflow: hidden;
+ 
 }
 
 .left_aside::-webkit-scrollbar {
     display: none;
 }
+
 
 .outer-carousel {
     position: relative;
@@ -199,7 +203,7 @@ text-align: center;
     height: 18vw;
     width: 27vw;
 }
-
+/*--------------main-content-latest-Release-css--------------------------*/
 .latest_release{
     position: relative;
     top: 19vw;
@@ -217,6 +221,7 @@ text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+ 
 }
 
 .latest_songs{
@@ -227,13 +232,71 @@ text-align: center;
 
 }
 
-.latest_songs:hover{
-    border: 1px solid white;
+.song_info{
+    margin: auto 9%;
 }
+
+.latest_songs:hover{
+    box-shadow: 0px 0px 2px 1px white;
+}
+.song_options{
+
+
+    text-align: right;
+    margin-left: auto;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
 
 .song_logo img{
     width: 95px;
     height: 95px;
 }
 
+/*-------------sidebar-playlist-css--------------------------*/
+.playlist{
+    width: 100%;
+    height: 75vh;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    cursor: pointer;
+}
+.playlist::-webkit-scrollbar {
+    display: none;
+}
 
+.playlist_content{
+    width: 90%;
+    height: auto;
+    padding: 0px 1%;
+
+    margin: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.playlist_content:hover {
+    box-shadow: 0px 0px 2px 1px white;
+}
+.playlist_logo{
+    display: flex;
+    align-items: center;
+  
+}
+.playlist_logo img{
+  
+    width: 90px;
+    height: 80px;
+}
+
+.playlist-item:hover .fa-heart {
+    animation-name: glowing-heart;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
