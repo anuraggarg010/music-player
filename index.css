@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+}
+body{
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color:  var(--backgroundcolor);
+    margin: 0px;
+  
+    color:white;
+}
+
+:root{
+    --backgroundcolor: rgba(0,0,33,0.93);
+    --textcolor:white;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+/*--------------navbar-css--------------------------*/
+
+.nav{
+    height: auto;
+    width: auto;
+    background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: all ease-in-out 1s;
+}
+
+.nav > div {
+    display: inline-block;
+}
+
+.logo > div{
+    display: inline-block;
+}
+
+.logo_img img {
+    height: 50px;
+    width: 50px;
+}
+
+.logo  h1{
+    color: var(--textcolor);
+}
+
+.logo h4{
+    color: rgb(80, 220, 255);
+}
+
+.fava{
+    color:var(--textcolor);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.fava:hover{
+    color:rgb(80, 220, 255);
+    font-size: 25px;
+    transition: all ease-in-out 1s;
+}
+
+.search_bar{
+ 
+        width: 20%;
+        position: relative;
+
+}
+.search_bar > div:nth-child(1) {
+    display: inline-block;
+    position: absolute;
+    width: min-content;
+    left: 3.4%;
+    top: 10%;
+    transition: all ease-in-out 0.1s;
+}
+
+.search_bar > div:nth-child(3) {
+    display: inline-block;
+    position: absolute;
+    width: min-content;
+    right: 0%;
+    top: 10%;
+    transition: all ease-in-out 0.1s;
+}
+.search_bar input{
+width: 100%;
+font-size: 16px;
+text-decoration: none;
+border-radius: 9px;
+border: none;
+background-color: #141b41;
+padding: 5px;
+font-weight: 500;
+transition: all ease-in-out 0.1s;
+text-align: center;
+}
+
+.bell img{
+    width:40px;
+    height: 40px;
+}
+
+.profile_pic img{
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+}
+
+/*--------------main-content-css--------------------------*/
+
+.main_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0% 3%;
+
+    justify-content: space-around;
+    transition: all ease-in-out 1s;
+    }
+
+.aside {
+    display: inline-block;
+   overflow: hidden;
+ }
+
+.left_aside{
+    width: 70%;
+    height: 86vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+.right_aside{
+    width: 28%;
+    height: 86vh;
+}
+
+.left_aside::-webkit-scrollbar {
+    display: none;
+}
+
+.outer-carousel {
+    position: relative;
+    left: 9vw;
+    margin-top: 5%;
+    transition: all ease-in-out 2s;
+}
+
+.carousel {
+    position: absolute;
+    left: 2%;
+    width: 68%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    justify-content: space-around;
+}
+
+.carousel img {
+    height: 15vw;
+    width: 22.5vw;
+    border-radius: 2px;
+    transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s;
+}
+
+.carousel img:nth-child(1) {
+    position: relative;
+    left: 41vw;
+    z-index: 1;
+}
+
+.carousel img:nth-child(2) {
+    z-index: 2;
+    transform: scaleX(1.4) scaleY(1.2);
+}
+
+.carousel img:nth-child(3) {
+    position: relative;
+    right: 41vw;
+    z-index: 1;
+}
+
+.carousel img:hover {
+    z-index: 4;
+    box-shadow: 0px 0px 12px 0.1px black;
+    height: 18vw;
+    width: 27vw;
+}
+
+.latest_release{
+    position: relative;
+    top: 19vw;
+    height: auto;
+    width: 100%;
+    
+}
+.all_songs > div{
+    height: 100px;
+    width: 40%;
+    margin: 5px 0px;
+}
+.all_songs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.latest_songs{
+    display: flex;
+   flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+
+}
+
+.latest_songs:hover{
+    border: 1px solid white;
+}
+
+.song_logo img{
+    width: 95px;
+    height: 95px;
+}
+
+
