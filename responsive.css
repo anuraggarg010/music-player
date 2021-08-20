@@ -15,6 +15,7 @@ input {
 @media screen and (max-width: 900px) {
     .outer-carousel {
         height: 9%;
+        margin-left: 10%;
     }
 
     .carousel img {
@@ -57,21 +58,51 @@ input {
      .left_aside{ 
          width: 100%;
       }
+.music-themes{
+      justify-content: space-around;
+      background-color: red !important;
+}
+.stations-main{
+ justify-content: space-between;
 
+}
 
+.station-content{
+    height: 12vw;
+    width: 12vw;
+   
+}
+
+.station-content img{
+    width: 12vw;
+    height: 12vw;
+    
+}
+.station-content p {
+font-size: 2vw;
+top: -12.5vw;
+}
 }
 
 @media screen and (max-width: 650px) {
    .all_songs{
        flex-direction: column;
+       align-items: center;
    }
+   .all_songs > div {
+    width: 65%;
+    }
+  
 
 }
+
+
 @media screen and (max-width: 550px){
 .logo_img img {
     height: 30px;
     width: 30px;
 }
+
 
 .logo  h1{
     font-size: 3vw; 
