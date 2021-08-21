@@ -270,7 +270,7 @@ text-align: center;
 .playlist_content{
     width: 90%;
     height: auto;
-    padding: 0px 1%;
+    padding: 17px 0%;
 
     margin: 1%;
     display: flex;
@@ -290,7 +290,7 @@ text-align: center;
 .playlist_logo img{
   
     width: 90px;
-    height: 80px;
+    height: 90px;
 }
 
 .playlist-item:hover .fa-heart {
@@ -455,4 +455,53 @@ margin-top:2%;
 
 .mthemes2a{
     background-image: url("images/music\ themes\ 2/party.jpg");
+}
+
+
+
+/*------------english-songs-css--------------------------*/
+
+.english-songs{
+    position:relative;
+    top: 40vw;
+}
+
+.songlist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top:20px ;
+
+}
+
+.engsong{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.engsong img{
+    width: 10vw;
+    min-width: 60px;
+    height: 10vw;
+    min-height: 60px;
+    transition: box-shadow ease-in-out 0.1s;
+
+}
+.engsong img:hover{
+    box-shadow:  0px 0px 10px 1px white;;
+}
+
+.songinfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:5px;
+}
+
+#hindisong{
+    top:43vw !important;
 }
