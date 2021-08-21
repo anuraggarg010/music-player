@@ -437,25 +437,6 @@ margin-top:2%;
 }
 
 
-/*------------music-themes2-css--------------------------*/
-
-.music-themes2{
-    position: relative;
-    top:35vw;
-    width:90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-
-}
-.mthemes2{
-   width: 200px;
-   height: 200px;
-}
-
-.mthemes2a{
-    background-image: url("images/music\ themes\ 2/party.jpg");
-}
 
 
 
@@ -463,7 +444,7 @@ margin-top:2%;
 
 .english-songs{
     position:relative;
-    top: 40vw;
+    top: 37vw;
 }
 
 .songlist{
@@ -499,9 +480,89 @@ margin-top:2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:5px;
+   
 }
 
 #hindisong{
-    top:43vw !important;
+    top:40vw !important;
+}
+
+/*------------english-songs-css--------------------------*/
+.music-themes-2 {
+    position: relative;
+    top: 33vw;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* this outer div contains the inner div and the image and text */
+.outer-div {
+    width: 19.5vw;
+    height: 13vw;
+    overflow: hidden;
+    min-width: 123px;
+    min-height: 82px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.inner-div {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    transition: all ease-in-out 0.3s;
+}
+
+
+.music-themes-2 .outer-div:nth-child(1) .inner-div {
+    background-image: url("images/music\ themes\ 2/party.jpg");
+}
+/* electronic */
+.music-themes-2 .outer-div:nth-child(2) .inner-div {
+    background-image: url("images/music\ themes\ 2/electronic.jpg");
+}
+/* road */
+.music-themes-2 .outer-div:nth-child(3) .inner-div {
+    background-image: url("images/music\ themes\ 2/road.png");
+}
+
+.outer-div:hover .inner-div {
+    transform: scale(1.3);
+}
+.outer-div .inner-div span {
+    transform: scale(1);
+    transition: all ease-in-out 0.3s;
+}
+.outer-div:hover .inner-div span {
+    transform: scale(0.75);
+}
+.inner-div::before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+/* adjusting inner div properties */
+.inner-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.outer-div .inner-div span {
+    /* color: white; */
+    color: white;
+    font-size: 2vw;
 }
